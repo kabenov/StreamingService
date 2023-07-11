@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">StreamingService</string>
+
+    <string name="activity_authorization_image_view_description_tynda_logo">Tynda Logo</string>
+    <string name="activity_authorization_button_sign_in">Кіру</string>
+    <string name="activity_authorization_button_sign_up">Тіркелу</string>
+
+    <string name="fragment_home_page_title">Әуендер</string>
+    <string name="fragment_home_page_recycle_title_recommend">Ұсыныстар</string>
+    <string name="fragment_home_page_recycle_title_genre">Жанрлар</string>
+
+    <string name="fragment_audio_book_title">Аудиокітаптар</string>
+
+    <string name="fragment_favorites_user_name">Symba</string>
+
+    <string name="fragment_favorites_title">Менің плейлисттерім</string>
+    <string name="fragment_favorites_music">Сүйікті әуендерім</string>
+    <string name="fragment_favorites_audiobooks">Сүйікті аудиокітаптарым</string>
+
+    <string name="fragment_search_hint_title">  Не тыңдағыңыз келеді?</string>
+    <string name="fragment_search_musics_for_you">Сізге арналған</string>
+    <string name="fragment_search_new_albums">Жаңа музыкалық альбомдар</string>
+
+    <string name="activity_player_poster_description">Music poster</string>
+    <string name="activity_player_default_current_time">0:00</string>
+    <string name="activity_player_default_music_duration">0:00</string>
+
+    <string name="title_activity_player">0:00</string>
+
+    <string name="fragment_sign_up_username_hint">Пайдаланушы аты</string>
+    <string name="fragment_sign_up_email_hint">Электрондық почта</string>
+    <string name="fragment_sign_up_password_hint">Құпия сөз</string>
+    <string name="fragment_sign_up_forget_password">Құпия сөзді ұмыттыңызба?</string>
+    <string name="fragment_sign_up_button">Тіркелу</string>
+    <string name="fragment_sign_up_link_sign_in">немесе кіру</string>
+
+    <string name="fragment_sign_in_link_sign_up">немесе тіркелу</string>
+    <string name="fragment_sign_in_button">Кіру</string>
+
+    <string name="fragment_playlist_detail_label">Сіз тыңдап тұрсыз</string>
+    <string name="fragment_playlist_detail_title">Ән жинақ атауы</string>
+
+    <string name="fragment_user_profile_playlist_title">Әнжинақтар саны</string>
+    <string name="fragment_user_profile_favorite_title">Әуендер саны</string>
+    <string name="fragment_user_profile_button">Өзгерту</string>
+
+</resources>

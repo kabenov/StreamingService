@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_player_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@android:drawable/screen_background_dark_transparent"
+    tools:context=".presentation.BottomPlayerViewFragment">
+
+    <ImageView
+        android:id="@+id/image_view_bottom_player_layout_favourite_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_heart"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_player_layout_music_info_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical|fill_horizontal" >
+
+        <TextView
+            android:id="@+id/text_view_music_info_layout_music_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Music title lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:id="@+id/text_view_music_info_layout_music_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Music author"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/secondary_text"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_view_bottom_player_layout_pause_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp" />
+</LinearLayout>
+</layout>

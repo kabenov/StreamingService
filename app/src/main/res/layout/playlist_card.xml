@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="15dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_playlist_card_poster"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:contentDescription="Music poster"
+        app:shapeAppearanceOverlay="@style/RoundedCorners"
+        tools:src="@drawable/music_card_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_playlist_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Qazaq vibe"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_playlist_card_music_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="13 әуен"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

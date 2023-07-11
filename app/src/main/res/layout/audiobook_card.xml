@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp">
+
+    <ImageView
+        android:id="@+id/music_card_image_view_music_poster"
+        android:layout_width="122dp"
+        android:layout_height="171dp"
+        android:contentDescription="Audiobook poster"
+        tools:src="@drawable/audiobook_card_img" />
+
+    <TextView
+        android:id="@+id/music_card_text_view_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_text"
+        android:textSize="14dp"
+        android:layout_marginStart="5dp"
+        tools:text="Book name" />
+
+    <TextView
+        android:id="@+id/music_card_text_view_music_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary_text"
+        android:textSize="12dp"
+        android:layout_marginStart="5dp"
+        tools:text="Book author" />
+
+</LinearLayout>

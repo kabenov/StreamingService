@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".presentation.AuthorizationFragment">
+
+        <ImageView
+            android:id="@+id/image_view_fragment_authorization_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/activity_authorization_image_view_description_tynda_logo"
+            android:src="@drawable/image_logo"
+            app:layout_constraintBottom_toTopOf="@id/layout_fragment_authorization_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_fragment_authorization_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_fragment_authorization_logo">
+
+            <TextView
+                android:id="@+id/button_fragment_authorization_sign_in"
+                android:layout_width="185dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/authorization_button_background"
+                android:gravity="center"
+                android:text="@string/activity_authorization_button_sign_in"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/button_fragment_authorization_sign_up"
+                android:layout_width="185dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/authorization_button_background"
+                android:gravity="center"
+                android:radius="10dp"
+                android:text="@string/activity_authorization_button_sign_up"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

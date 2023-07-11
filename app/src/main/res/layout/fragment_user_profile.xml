@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.UserProfileFragment">
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_more_horiz" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_fragment_user_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/symba_user_pic"
+        app:shapeAppearanceOverlay="@style/UserProfileRoundedCorners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_back"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/image_view_fragment_user_profile_image_change"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/profile_image_change_background"
+        android:paddingStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:drawableStartCompat="@drawable/ic_camera" />
+
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/fragment_favorites_user_name"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/image_view_fragment_user_profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_playlist_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        tools:text="0"
+        android:textColor="@color/primary_text"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_username"
+        app:layout_constraintBottom_toTopOf="@id/text_view_fragment_user_profile_playlist_title"
+        app:layout_constraintStart_toStartOf="@id/text_view_fragment_user_profile_playlist_title"
+        app:layout_constraintEnd_toEndOf="@id/text_view_fragment_user_profile_playlist_title" />
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_favorite_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        tools:text="0"
+        android:textColor="@color/primary_text"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_username"
+        app:layout_constraintBottom_toTopOf="@id/text_view_fragment_user_profile_favorite_title"
+        app:layout_constraintStart_toStartOf="@id/text_view_fragment_user_profile_favorite_title"
+        app:layout_constraintEnd_toEndOf="@id/text_view_fragment_user_profile_favorite_title" />
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_playlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/fragment_user_profile_playlist_title"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_view_fragment_user_profile_favorite_title"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_playlist_count" />
+
+    <TextView
+        android:id="@+id/text_view_fragment_user_profile_favorite_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/fragment_user_profile_favorite_title"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintStart_toEndOf="@id/text_view_fragment_user_profile_playlist_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_favorite_count" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_fragment_user_profile_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_fragment_user_profile_playlist_title"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Қолданушы есімі"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_fragment_user_profile_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_fragment_user_profile_username"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Электронды почта"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/button_fragment_user_profile_change"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="@string/fragment_user_profile_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/authorization_button_background"
+        app:layout_constraintTop_toBottomOf="@id/text_input_fragment_user_profile_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
